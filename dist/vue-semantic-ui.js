@@ -74,11 +74,61 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function install(Vue) {
-	  Vue.component('vue-semantic-ui', _VueSemanticUi2.default);
+	  Vue.component('ui-button', _VueSemanticUi2.default.UiButton);
+	  Vue.component('ui-buttons', _VueSemanticUi2.default.UiButtons);
+	  Vue.component('ui-container', _VueSemanticUi2.default.UiContainer);
+	  Vue.component('ui-divider', _VueSemanticUi2.default.UiDivider);
+	  Vue.component('ui-flag', _VueSemanticUi2.default.UiFlag);
+	  Vue.component('ui-icon', _VueSemanticUi2.default.UiIcon);
 	}
 
 /***/ },
 /* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Button = __webpack_require__(2);
+
+	var _Button2 = _interopRequireDefault(_Button);
+
+	var _Buttons = __webpack_require__(3);
+
+	var _Buttons2 = _interopRequireDefault(_Buttons);
+
+	var _Container = __webpack_require__(4);
+
+	var _Container2 = _interopRequireDefault(_Container);
+
+	var _Divider = __webpack_require__(5);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _Flag = __webpack_require__(6);
+
+	var _Flag2 = _interopRequireDefault(_Flag);
+
+	var _Icon = __webpack_require__(7);
+
+	var _Icon2 = _interopRequireDefault(_Icon);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	  UiButton: _Button2.default,
+	  UiButtons: _Buttons2.default,
+	  UiContainer: _Container2.default,
+	  UiDivider: _Divider2.default,
+	  UiFlag: _Flag2.default,
+	  UiIcon: _Icon2.default
+	};
+
+/***/ },
+/* 2 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -87,7 +137,108 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  template: '<button class="ui button">Follow</button>'
+	  template: '<div class="ui {{css}} button"><slot>Default</slot></div>',
+	  props: {
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  }
+	};
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div class="ui {{css}} buttons"><slot></slot></div>',
+	  props: {
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  }
+	};
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div class="ui {{css}} container"><slot></slot></div>',
+	  props: {
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  }
+	};
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div class="ui {{css}} divider"></div>',
+	  props: {
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  }
+	};
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<i class="{{css}} flag"></i>',
+	  props: {
+	    css: {
+	      type: String,
+	      default: 'cn'
+	    }
+	  }
+	};
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<i class="{{css}} icon"></i><slot></slot>',
+	  props: {
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  }
 	};
 
 /***/ }

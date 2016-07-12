@@ -1,5 +1,5 @@
 export default {
-  template: '<div class="ui {{css}} button"><slot>Default</slot></div>',
+  template: '<i class="{{css}} icon"></i><slot></slot>',
   props: {
     css: {
       type: String,

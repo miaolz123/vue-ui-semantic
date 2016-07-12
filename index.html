@@ -9,12 +9,44 @@
 </head>
 
 <body>
-  <button class="ui button">Follow</button>
-  <vue-semantic-ui></vue-semantic-ui>
-  <br>
-  <p>
-    Powered by <a href="//github.com/miaolz123/vue-semantic-ui" target="_blank">VueSemanticUi</a>
-  </p>
+  <ui-container>
+    <br>
+    <div>
+      <ui-button css="left labeled">
+        <a class="ui basic right pointing label">
+          2,048
+        </a>
+        <ui-button>
+          <ui-icon css="fork">Fork</icon>
+        </ui-button>
+      </ui-button>
+      <ui-button css="basic">
+        <ui-icon css="user">Add Friend</icon>
+      </ui-button>
+      <ui-button css="active">Active</ui-button>
+      <ui-button css="disabled">Disabled</ui-button>
+      <ui-button css="loading">Loading</ui-button>
+    </div>
+    <ui-divider></ui-divider>
+    <div>
+      <ui-buttons>
+        <ui-button><ui-icon css="align left"></icon></ui-button>
+        <ui-button><ui-icon css="align center"></icon></ui-button>
+        <ui-button><ui-icon css="align right"></icon></ui-button>
+        <ui-button><ui-icon css="align justify"></icon></ui-button>
+      </ui-buttons>
+    </div>
+    <ui-divider></ui-divider>
+    <ui-flag></ui-flag>
+    <ui-flag css="us"></ui-flag>
+    <ui-flag css="gb"></ui-flag>
+    <ui-flag css="jp"></ui-flag>
+    <ui-flag css="eu"></ui-flag>
+    <ui-divider></ui-divider>
+    <p>
+      Powered by <a href="//github.com/miaolz123/vue-semantic-ui" target="_blank">VueSemanticUi</a>
+    </p>
+  </ui-container>
   <script src="dist/jquery.js"></script>
   <script src="dist/semantic.js"></script>
   <script src="dist/vue.js"></script>

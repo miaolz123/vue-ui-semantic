@@ -1,5 +1,5 @@
-import VueHelmetComponent from './VueHelmet'
+import VueSemanticUiComponent from './VueSemanticUi'
 
 export function install(Vue) {
-  Vue.component('vue-helmet', VueHelmetComponent)
+  Vue.component('vue-semantic-ui', VueSemanticUiComponent)
 }

@@ -1,5 +1,3 @@
-import Button from './components/Button'
-
-export {
-  Button,
+export default {
+  template: '<button class="ui button">Follow</button>',
 }

@@ -10,6 +10,7 @@
 
 <body>
   <button class="ui button">Follow</button>
+  <vue-semantic-ui></vue-semantic-ui>
   <br>
   <p>
     Powered by <a href="//github.com/miaolz123/vue-semantic-ui" target="_blank">VueSemanticUi</a>
@@ -19,10 +20,10 @@
   <script src="dist/vue.js"></script>
   <script src="dist/vue-semantic-ui.js"></script>
   <script>
-    // Vue.use(VueChart);
-    // var vm = new Vue({
-    //   el: "body"
-    // });
+    Vue.use(VueSemanticUi);
+      var vm = new Vue({
+      el: "body"
+    });
   </script>
 </body>
 

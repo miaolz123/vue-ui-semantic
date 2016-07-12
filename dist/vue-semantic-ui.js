@@ -58,13 +58,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.install = install;
+
+	var _VueSemanticUi = __webpack_require__(1);
+
+	var _VueSemanticUi2 = _interopRequireDefault(_VueSemanticUi);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function install(Vue) {
+	  Vue.component('vue-semantic-ui', _VueSemanticUi2.default);
+	}
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
-	import VueHelmetComponent from './VueHelmet';
+	'use strict';
 
-	export function install(Vue) {
-	  Vue.component('vue-helmet', VueHelmetComponent);
-	}
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<button class="ui button">Follow</button>'
+	};
 
 /***/ }
 /******/ ])

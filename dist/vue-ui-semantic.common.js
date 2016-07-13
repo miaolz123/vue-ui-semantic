@@ -1,6 +1,6 @@
 /**
- * vue-semantic-ui v0.0.1
- * https://github.com/miaolz123/vue-semantic-ui
+ * vue-ui-semantic v0.0.1
+ * https://github.com/miaolz123/vue-ui-semantic
  * MIT License
  */
 
@@ -10,9 +10,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["VueSemanticUi"] = factory();
+		exports["VueUiSemantic"] = factory();
 	else
-		root["VueSemanticUi"] = factory();
+		root["VueUiSemantic"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -65,54 +65,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.install = install;
 
-	var _VueSemanticUi = __webpack_require__(1);
-
-	var _VueSemanticUi2 = _interopRequireDefault(_VueSemanticUi);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function install(Vue) {
-	  Vue.component('ui-button', _VueSemanticUi2.default.UiButton);
-	  Vue.component('ui-buttons', _VueSemanticUi2.default.UiButtons);
-	  Vue.component('ui-container', _VueSemanticUi2.default.UiContainer);
-	  Vue.component('ui-divider', _VueSemanticUi2.default.UiDivider);
-	  Vue.component('ui-flag', _VueSemanticUi2.default.UiFlag);
-	  Vue.component('ui-icon', _VueSemanticUi2.default.UiIcon);
-	}
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _Button = __webpack_require__(2);
+	var _Button = __webpack_require__(1);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Buttons = __webpack_require__(3);
+	var _Buttons = __webpack_require__(2);
 
 	var _Buttons2 = _interopRequireDefault(_Buttons);
 
-	var _Container = __webpack_require__(4);
+	var _Container = __webpack_require__(3);
 
 	var _Container2 = _interopRequireDefault(_Container);
 
-	var _Divider = __webpack_require__(5);
+	var _Divider = __webpack_require__(4);
 
 	var _Divider2 = _interopRequireDefault(_Divider);
 
-	var _Flag = __webpack_require__(6);
+	var _Flag = __webpack_require__(5);
 
 	var _Flag2 = _interopRequireDefault(_Flag);
 
-	var _Icon = __webpack_require__(7);
+	var _Icon = __webpack_require__(6);
 
 	var _Icon2 = _interopRequireDefault(_Icon);
 
@@ -128,7 +102,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 2 */
+/* 1 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -147,7 +121,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -166,7 +140,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 4 */
+/* 3 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -185,7 +159,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -204,7 +178,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -223,7 +197,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';

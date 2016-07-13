@@ -5,10 +5,14 @@ export default {
       type: String,
       default: '',
     },
+    src: {
+      type: String,
+      default: '',
+    },
   },
   computed: {
     class: function () {
-      return this.css ? `ui ${this.css} container` : "ui container"
+      return this.css ? `ui ${this.css} input` : "ui input"
     },
   },
 }

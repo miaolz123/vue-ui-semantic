@@ -1,35 +1,35 @@
 {
-  "name": "vue-semantic-ui",
+  "name": "vue-ui-semantic",
   "version": "0.0.1",
   "description": "semantic-ui for vue",
-  "main": "dist/vue-semantic-ui.common.js",
+  "main": "dist/vue-ui-semantic.common.js",
   "files": [
-    "dist/vue-semantic-ui.js",
-    "dist/vue-semantic-ui.min.js",
-    "dist/vue-semantic-ui.common.js",
+    "dist/vue-ui-semantic.js",
+    "dist/vue-ui-semantic.min.js",
+    "dist/vue-ui-semantic.common.js",
     "src"
   ],
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "min": "uglifyjs ./dist/vue-semantic-ui.js -m -c --noerr -o ./dist/vue-semantic-ui.min.js",
+    "min": "uglifyjs ./dist/vue-ui-semantic.js -m -c --noerr -o ./dist/vue-ui-semantic.min.js",
     "build": "webpack --config webpack.common.js",
     "test": "echo true"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miaolz123/vue-semantic-ui.git"
+    "url": "git+https://github.com/miaolz123/vue-ui-semantic.git"
   },
   "keywords": [
     "vue",
     "semantic-ui",
-    "vue-semantic-ui"
+    "vue-ui-semantic"
   ],
   "author": "miaolz123",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miaolz123/vue-semantic-ui/issues"
+    "url": "https://github.com/miaolz123/vue-ui-semantic/issues"
   },
-  "homepage": "https://github.com/miaolz123/vue-semantic-ui#readme",
+  "homepage": "https://github.com/miaolz123/vue-ui-semantic#readme",
   "devDependencies": {
     "babel-core": "^6.8.0",
     "babel-loader": "^6.2.4",

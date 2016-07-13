@@ -1,9 +1,14 @@
 export default {
-  template: '<div class="ui {{css}} buttons"><slot></slot></div>',
+  template: '<div :class="class"><slot></slot></div>',
   props: {
     css: {
       type: String,
       default: '',
+    },
+  },
+  computed: {
+    class: function () {
+      return this.css ? `ui ${this.css} buttons` : "ui buttons"
     },
   },
 }

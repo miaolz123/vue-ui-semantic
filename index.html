@@ -43,17 +43,42 @@
     <ui-flag css="jp"></ui-flag>
     <ui-flag css="eu"></ui-flag>
     <ui-divider></ui-divider>
+    <ui-h2 css="center aligned icon">
+      <ui-icon css="circular users">Friends</ui-icon>
+    </ui-h2>
+    <ui-h1>
+      Account Settings
+      <ui-sub-header css="">Manage your account settings and set e-mail preferences.</ui-sub-header>
+    </ui-h1>
+    <ui-h2 css="disabled">Disabled Title</ui-h2>
+    <ui-divider></ui-divider>
+    <ui-image css="avatar" src="dist/image.png"><span>Username</span></ui-image>
+    <ui-divider css="hidden"></ui-divider>
+    <ui-image css="medium rounded" src="dist/image.png"></ui-image>
+    <ui-divider></ui-divider>
+    <ui-input css="left icon fluid">
+      <input type="text" placeholder="Search users...">
+      <ui-icon css="users"></ui-icon>
+    </ui-input>
+    <ui-divider css="hidden"></ui-divider>
+    <ui-input css="labeled">
+      <ui-label>http://</ui-label>
+      <input type="text" placeholder="mysite.com">
+    </ui-input>
+    <ui-divider></ui-divider>
+    <ui-label href="#"><ui-icon css="mail">23</ui-icon></ui-label>
+    <ui-divider></ui-divider>
     <p>
-      Powered by <a href="//github.com/miaolz123/vue-semantic-ui" target="_blank">VueSemanticUi</a>
+      Powered by <a href="//github.com/miaolz123/vue-ui-semantic" target="_blank">VueUiSemantic</a>
     </p>
   </ui-container>
   <script src="dist/jquery.js"></script>
   <script src="dist/semantic.js"></script>
   <script src="dist/vue.js"></script>
-  <script src="dist/vue-semantic-ui.js"></script>
+  <script src="dist/vue-ui-semantic.js"></script>
   <script>
-    Vue.use(VueSemanticUi);
-      var vm = new Vue({
+    Vue.use(VueUiSemantic);
+    var vm = new Vue({
       el: "body"
     });
   </script>

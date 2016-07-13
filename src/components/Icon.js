@@ -3,7 +3,7 @@ export default {
   props: {
     css: {
       type: String,
-      default: '',
+      default: 'warning sign',
     },
   },
 }

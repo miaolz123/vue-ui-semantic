@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>vue-semantic-ui</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="example/static/semantic.css">
-</head>
-
-<body>
+<template>
   <ui-container>
     <br>
     <div>
@@ -50,9 +40,9 @@
     </ui-h1>
     <ui-h2 css="disabled">Disabled Title</ui-h2>
     <ui-divider></ui-divider>
-    <ui-image css="avatar" src="example/static/image.png"><span>Username</span></ui-image>
+    <ui-image css="avatar" src="/static/image.png"><span>Username</span></ui-image>
     <ui-divider css="hidden"></ui-divider>
-    <ui-image css="medium rounded" src="example/static/image.png"></ui-image>
+    <ui-image css="medium rounded" src="/static/image.png"></ui-image>
     <ui-divider></ui-divider>
     <ui-input css="left icon fluid">
       <input type="text" placeholder="Search users...">
@@ -97,8 +87,8 @@
     </ui-segment>
     <ui-divider></ui-divider>
     <ui-reveal css="small circular fade image">
-      <ui-image class="visible content" src="example/static/user.jpg"></ui-image>
-      <ui-image class="hidden content" src="example/static/image.png"></ui-image>
+      <ui-image class="visible content" src="/static/user.jpg"></ui-image>
+      <ui-image class="hidden content" src="/static/image.png"></ui-image>
     </ui-reveal>
     <ui-divider></ui-divider>
     <ui-segment css="piled">
@@ -132,16 +122,43 @@
       Powered by <a href="//github.com/miaolz123/vue-ui-semantic" target="_blank">VueUiSemantic</a>
     </p>
   </ui-container>
-  <script src="example/static/jquery.js"></script>
-  <script src="example/static/semantic.js"></script>
-  <script src="example/static/vue.js"></script>
-  <script src="dist/vue-ui-semantic.js"></script>
-  <script>
-    Vue.use(VueUiSemantic);
-    var vm = new Vue({
-      el: "body"
-    });
-  </script>
-</body>
+</template>
 
-</html>
+<script>
+import Ui from '../../dist/vue-ui-semantic.common';
+
+export default {
+  template: '<p>wo shi ceshi</p>',
+  components: {
+    // util
+    'ui-content': Ui.Content,
+    'ui-description': Ui.Description,
+    'ui-item': Ui.Item,
+    'ui-title': Ui.Title,
+    // elements
+    'ui-button': Ui.Button,
+    'ui-buttons': Ui.Buttons,
+    'ui-container': Ui.Container,
+    'ui-divider': Ui.Divider,
+    'ui-flag': Ui.Flag,
+    'ui-h1': Ui.H1,
+    'ui-h2': Ui.H2,
+    'ui-h3': Ui.H3,
+    'ui-h4': Ui.H4,
+    'ui-h5': Ui.H5,
+    'ui-h6': Ui.H6,
+    'ui-sub-header': Ui.SubHeader,
+    'ui-icon': Ui.Icon,
+    'ui-image': Ui.Image,
+    'ui-input': Ui.Input,
+    'ui-label': Ui.Label,
+    'ui-list': Ui.List,
+    'ui-loader': Ui.Loader,
+    'ui-rail': Ui.Rail,
+    'ui-reveal': Ui.Reveal,
+    'ui-segment': Ui.Segment,
+    'ui-step': Ui.Step,
+    'ui-steps': Ui.Steps,
+  },
+};
+</script>

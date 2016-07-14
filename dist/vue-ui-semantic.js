@@ -1,5 +1,5 @@
 /**
- * vue-ui-semantic v0.0.1
+ * vue-ui-semantic v0.1.0
  * https://github.com/miaolz123/vue-ui-semantic
  * MIT License
  */
@@ -74,22 +74,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function install(Vue) {
-	  Vue.component('ui-button', _VueUiSemantic2.default.UiButton);
-	  Vue.component('ui-buttons', _VueUiSemantic2.default.UiButtons);
-	  Vue.component('ui-container', _VueUiSemantic2.default.UiContainer);
-	  Vue.component('ui-divider', _VueUiSemantic2.default.UiDivider);
-	  Vue.component('ui-flag', _VueUiSemantic2.default.UiFlag);
-	  Vue.component('ui-h1', _VueUiSemantic2.default.UiH1);
-	  Vue.component('ui-h2', _VueUiSemantic2.default.UiH2);
-	  Vue.component('ui-h3', _VueUiSemantic2.default.UiH3);
-	  Vue.component('ui-h4', _VueUiSemantic2.default.UiH4);
-	  Vue.component('ui-h5', _VueUiSemantic2.default.UiH5);
-	  Vue.component('ui-h6', _VueUiSemantic2.default.UiH6);
-	  Vue.component('ui-sub-header', _VueUiSemantic2.default.UiSubHeader);
-	  Vue.component('ui-icon', _VueUiSemantic2.default.UiIcon);
-	  Vue.component('ui-image', _VueUiSemantic2.default.UiImage);
-	  Vue.component('ui-input', _VueUiSemantic2.default.UiInput);
-	  Vue.component('ui-label', _VueUiSemantic2.default.UiLabel);
+	  // util
+	  Vue.component('ui-content', _VueUiSemantic2.default.Content);
+	  Vue.component('ui-description', _VueUiSemantic2.default.Description);
+	  Vue.component('ui-item', _VueUiSemantic2.default.Item);
+	  Vue.component('ui-title', _VueUiSemantic2.default.Title);
+	  // elements
+	  Vue.component('ui-button', _VueUiSemantic2.default.Button);
+	  Vue.component('ui-buttons', _VueUiSemantic2.default.Buttons);
+	  Vue.component('ui-container', _VueUiSemantic2.default.Container);
+	  Vue.component('ui-divider', _VueUiSemantic2.default.Divider);
+	  Vue.component('ui-flag', _VueUiSemantic2.default.Flag);
+	  Vue.component('ui-h1', _VueUiSemantic2.default.H1);
+	  Vue.component('ui-h2', _VueUiSemantic2.default.H2);
+	  Vue.component('ui-h3', _VueUiSemantic2.default.H3);
+	  Vue.component('ui-h4', _VueUiSemantic2.default.H4);
+	  Vue.component('ui-h5', _VueUiSemantic2.default.H5);
+	  Vue.component('ui-h6', _VueUiSemantic2.default.H6);
+	  Vue.component('ui-sub-header', _VueUiSemantic2.default.SubHeader);
+	  Vue.component('ui-icon', _VueUiSemantic2.default.Icon);
+	  Vue.component('ui-image', _VueUiSemantic2.default.Image);
+	  Vue.component('ui-input', _VueUiSemantic2.default.Input);
+	  Vue.component('ui-label', _VueUiSemantic2.default.Label);
+	  Vue.component('ui-list', _VueUiSemantic2.default.List);
+	  Vue.component('ui-loader', _VueUiSemantic2.default.Loader);
+	  Vue.component('ui-rail', _VueUiSemantic2.default.Rail);
+	  Vue.component('ui-reveal', _VueUiSemantic2.default.Reveal);
+	  Vue.component('ui-segment', _VueUiSemantic2.default.Segment);
+	  Vue.component('ui-step', _VueUiSemantic2.default.Step);
+	  Vue.component('ui-steps', _VueUiSemantic2.default.Steps);
 	}
 
 /***/ },
@@ -102,13 +115,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _Button = __webpack_require__(2);
+	var _util = __webpack_require__(2);
 
-	var _Button2 = _interopRequireDefault(_Button);
-
-	var _Buttons = __webpack_require__(3);
-
-	var _Buttons2 = _interopRequireDefault(_Buttons);
+	var _Button = __webpack_require__(3);
 
 	var _Container = __webpack_require__(4);
 
@@ -140,25 +149,60 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Label2 = _interopRequireDefault(_Label);
 
+	var _List = __webpack_require__(12);
+
+	var _List2 = _interopRequireDefault(_List);
+
+	var _Loader = __webpack_require__(13);
+
+	var _Loader2 = _interopRequireDefault(_Loader);
+
+	var _Rail = __webpack_require__(14);
+
+	var _Rail2 = _interopRequireDefault(_Rail);
+
+	var _Reveal = __webpack_require__(15);
+
+	var _Reveal2 = _interopRequireDefault(_Reveal);
+
+	var _Segment = __webpack_require__(16);
+
+	var _Segment2 = _interopRequireDefault(_Segment);
+
+	var _Step = __webpack_require__(17);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
-	  UiButton: _Button2.default,
-	  UiButtons: _Buttons2.default,
-	  UiContainer: _Container2.default,
-	  UiDivider: _Divider2.default,
-	  UiFlag: _Flag2.default,
-	  UiH1: _Header.H1,
-	  UiH2: _Header.H2,
-	  UiH3: _Header.H3,
-	  UiH4: _Header.H4,
-	  UiH5: _Header.H5,
-	  UiH6: _Header.H6,
-	  UiSubHeader: _Header.SubHeader,
-	  UiIcon: _Icon2.default,
-	  UiImage: _Image2.default,
-	  UiInput: _Input2.default,
-	  UiLabel: _Label2.default
+	  // util
+	  Content: _util.Content,
+	  Description: _util.Description,
+	  Item: _util.Item,
+	  Title: _util.Title,
+	  // elements
+	  Button: _Button.Button,
+	  Buttons: _Button.Buttons,
+	  Container: _Container2.default,
+	  Divider: _Divider2.default,
+	  Flag: _Flag2.default,
+	  H1: _Header.H1,
+	  H2: _Header.H2,
+	  H3: _Header.H3,
+	  H4: _Header.H4,
+	  H5: _Header.H5,
+	  H6: _Header.H6,
+	  SubHeader: _Header.SubHeader,
+	  Icon: _Icon2.default,
+	  Image: _Image2.default,
+	  Input: _Input2.default,
+	  Label: _Label2.default,
+	  List: _List2.default,
+	  Loader: _Loader2.default,
+	  Rail: _Rail2.default,
+	  Reveal: _Reveal2.default,
+	  Segment: _Segment2.default,
+	  Step: _Step.Step,
+	  Steps: _Step.Steps
 	};
 
 /***/ },
@@ -170,17 +214,78 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = {
-	  template: '<div :class="class"><slot>Default</slot></div>',
+	var Content = exports.Content = {
+	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' button' : "ui button";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' content' : "content";
+	    }
+	  }
+	};
+
+	var Description = exports.Description = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' description' : "description";
+	    }
+	  }
+	};
+
+	var Item = exports.Item = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' item' : "item";
+	    }
+	  }
+	};
+
+	var Title = exports.Title = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' title' : "title";
 	    }
 	  }
 	};
@@ -194,17 +299,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = {
-	  template: '<div :class="class"><slot></slot></div>',
+	var Button = exports.Button = {
+	  template: '<div :class="className"><slot>Default</slot></div>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' buttons' : "ui buttons";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' button' : "ui button";
+	    }
+	  }
+	};
+
+	var Buttons = exports.Buttons = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' buttons' : "ui buttons";
 	    }
 	  }
 	};
@@ -219,16 +347,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  template: '<div :class="class"><slot></slot></div>',
+	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' container' : "ui container";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' container' : "ui container";
 	    }
 	  }
 	};
@@ -243,16 +375,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  template: '<div :class="class"></div>',
+	  template: '<div :class="className"></div>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' divider' : "ui divider";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' divider' : "ui divider";
 	    }
 	  }
 	};
@@ -286,106 +422,134 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	var H1 = exports.H1 = {
-	  template: '<h1 :class="class"><slot></slot></h1>',
+	  template: '<h1 :class="className"><slot></slot></h1>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' header' : "ui header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
 	  }
 	};
 
 	var H2 = exports.H2 = {
-	  template: '<h2 :class="class"><slot></slot></h2>',
+	  template: '<h2 :class="className"><slot></slot></h2>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' header' : "ui header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
 	  }
 	};
 
 	var H3 = exports.H3 = {
-	  template: '<h3 :class="class"><slot></slot></h3>',
+	  template: '<h3 :class="className"><slot></slot></h3>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' header' : "ui header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
 	  }
 	};
 
 	var H4 = exports.H4 = {
-	  template: '<h4 :class="class"><slot></slot></h4>',
+	  template: '<h4 :class="className"><slot></slot></h4>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' header' : "ui header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
 	  }
 	};
 
 	var H5 = exports.H5 = {
-	  template: '<h5 :class="class"><slot></slot></h5>',
+	  template: '<h5 :class="className"><slot></slot></h5>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' header' : "ui header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
 	  }
 	};
 
 	var H6 = exports.H6 = {
-	  template: '<h6 :class="class"><slot></slot></h6>',
+	  template: '<h6 :class="className"><slot></slot></h6>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' header' : "ui header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
 	  }
 	};
 
 	var SubHeader = exports.SubHeader = {
-	  template: '<div :class="class"><slot></slot></div>',
+	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'sub ' + this.css + ' header' : "sub header";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'sub ' + this.css + ' header' : "sub header";
 	    }
 	  }
 	};
@@ -419,8 +583,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  template: '<img :class="class" :src="src"><slot></slot>',
+	  template: '<img :class="className" :src="src">',
 	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
 	    css: {
 	      type: String,
 	      default: ''
@@ -431,8 +599,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' image' : "ui image";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' image' : "ui image";
 	    }
 	  }
 	};
@@ -447,20 +615,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  template: '<div :class="class"><slot></slot></div>',
+	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
-	    css: {
+	    class: {
 	      type: String,
 	      default: ''
 	    },
-	    src: {
+	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' input' : "ui input";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' input' : "ui input";
 	    }
 	  }
 	};
@@ -475,20 +643,207 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	exports.default = {
-	  template: '<a :class="class"><slot></slot></a>',
+	  template: '<a :class="className"><slot></slot></a>',
 	  props: {
-	    css: {
+	    class: {
 	      type: String,
 	      default: ''
 	    },
-	    src: {
+	    css: {
 	      type: String,
 	      default: ''
 	    }
 	  },
 	  computed: {
-	    class: function _class() {
-	      return this.css ? 'ui ' + this.css + ' label' : "ui label";
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' label' : "ui label";
+	    }
+	  }
+	};
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' list' : "ui list";
+	    }
+	  }
+	};
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' loader' : "ui loader";
+	    }
+	  }
+	};
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' rail' : "ui rail";
+	    }
+	  }
+	};
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' reveal' : "ui reveal";
+	    }
+	  }
+	};
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' segment' : "ui segment";
+	    }
+	  }
+	};
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Step = exports.Step = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' step' : "step";
+	    }
+	  }
+	};
+
+	var Steps = exports.Steps = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' steps' : "ui steps";
 	    }
 	  }
 	};

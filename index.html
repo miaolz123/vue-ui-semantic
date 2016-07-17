@@ -41,14 +41,14 @@
     <ui-flag css="jp"></ui-flag>
     <ui-flag css="eu"></ui-flag>
     <ui-divider></ui-divider>
-    <ui-h2 css="center aligned icon">
+    <ui-header type="h2" css="center aligned icon">
       <ui-icon css="circular users">Friends</ui-icon>
-    </ui-h2>
-    <ui-h1>
+    </ui-header>
+    <ui-header type="h1">
       Account Settings
       <ui-sub-header css="">Manage your account settings and set e-mail preferences.</ui-sub-header>
-    </ui-h1>
-    <ui-h2 css="disabled">Disabled Title</ui-h2>
+    </ui-header>
+    <ui-header type="h2" css="disabled">Disabled Title</ui-header>
     <ui-divider></ui-divider>
     <ui-image css="avatar" src="example/static/image.png"><span>Username</span></ui-image>
     <ui-divider css="hidden"></ui-divider>
@@ -128,6 +128,293 @@
       </ui-step>
     </ui-steps>
     <ui-divider></ui-divider>
+    <ui-breadcrumb>
+      <ui-section type="a">Home</ui-section>
+      <ui-icon css="right angle divider"></ui-icon>
+      <ui-section type="a">Registration</ui-section>
+      <ui-icon css="right angle divider"></ui-icon>
+      <ui-section css="active">Personal Information</ui-section>
+    </ui-breadcrumb>
+    <ui-divider></ui-divider>
+    <ui-form>
+      <ui-fields css="three">
+        <ui-field>
+          <label>First name</label>
+          <input type="text" placeholder="First Name">
+        </ui-field>
+        <ui-field>
+          <label>Middle name</label>
+          <input type="text" placeholder="Middle Name">
+        </ui-field>
+        <ui-field>
+          <label>Last name</label>
+          <input type="text" placeholder="Last Name">
+        </ui-field>
+      </ui-fields>
+    </ui-form>
+    <ui-divider></ui-divider>
+    <ui-grid css="four column celled">
+      <ui-row css="two column">
+        <ui-column>(1, 1)</ui-column>
+        <ui-column>(1, 2)</ui-column>
+      </ui-row>
+      <ui-row>
+        <ui-column>(2, 1)</ui-column>
+        <ui-column>(2, 2)</ui-column>
+        <ui-column>(2, 3)</ui-column>
+        <ui-column>(2, 4)</ui-column>
+      </ui-row>
+    </ui-grid>
+    <ui-divider></ui-divider>
+    <ui-menu css="secondary">
+      <ui-item type="a" css="active">Home</ui-item>
+      <ui-item type="a">Messages</ui-item>
+      <ui-item type="a">Friends</ui-item>
+      <ui-menu css="right">
+        <ui-item>
+          <ui-input css="icon">
+            <input type="text" placeholder="Search...">
+            <ui-icon css="search link"></ui-icon>
+          </ui-input>
+        </ui-item>
+        <ui-item type="a">Logout</ui-item>
+      </ui-menu>
+    </ui-menu>
+    <ui-divider></ui-divider>
+    <ui-message css="icon">
+      <ui-icon css="inbox"></ui-icon>
+      <ui-content>
+        <ui-header>Have you heard about our mailing list?</ui-header>
+        <p>Get the best news in your e-mail every day.</p>
+      </ui-content>
+    </ui-message>
+    <ui-divider></ui-divider>
+    <ui-ad css="leaderboard test" data-text="Leaderboard AD"></ui-ad>
+    <ui-divider></ui-divider>
+    <ui-cards>
+      <ui-card>
+        <ui-content>
+          <ui-meta css="right floated">Joined in 2013</ui-meta>
+          <ui-header class="header">Veronika Ossi</ui-header>
+          <ui-description>Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.</ui-description>
+        </ui-content>
+        <ui-button css="bottom attached">
+          <ui-icon css="add">Add Friend</ui-icon>
+        </ui-button>
+      </ui-card>
+      <ui-card>
+        <ui-content>
+          <ui-meta css="right floated">Joined in 2015</ui-meta>
+          <ui-header class="header">Jenny Hess</ui-header>
+          <ui-description>Jenny is a student studying Media Management at the New School.</ui-description>
+        </ui-content>
+        <ui-button css="bottom attached">
+          <ui-icon css="add">Add Friend</ui-icon>
+        </ui-button>
+      </ui-card>
+    </ui-cards>
+    <ui-divider></ui-divider>
+    <ui-comments>
+      <ui-comment>
+        <ui-avatar src="example/static/user.jpg"></ui-avatar>
+        <ui-content>
+          <ui-author>Veronika Ossi</ui-author>
+          <ui-metadata>
+            <div>2 days ago</div>
+            <div><ui-icon css="star">5 Faves</ui-icon></div>
+          </ui-metadata>
+          <ui-text>This will be great for business reports. I will definitely download this.</ui-text>
+          <ui-actions>
+            <a>Reply</a>
+          </ui-actions>
+        </ui-content>
+        <ui-comments>
+          <ui-comment>
+            <ui-avatar src="example/static/image.png"></ui-avatar>
+            <ui-content>
+              <ui-author>Jenny Hess</ui-author>
+              <ui-metadata>
+                <div>1 day ago</div>
+                <div><ui-icon css="star">2 Faves</ui-icon></div>
+              </ui-metadata>
+              <ui-text>This has been very useful for my research. Thanks as well!</ui-text>
+              <ui-actions>
+                <a>Reply</a>
+                <a>Delete</a>
+              </ui-actions>
+            </ui-content>
+          </ui-comment>
+        </ui-comments>
+      </ui-comment>
+    </ui-comments>
+    <ui-divider></ui-divider>
+    <ui-feed>
+      <ui-event>
+        <ui-label type="div">
+          <img src="example/static/user.jpg">
+        </ui-label>
+        <ui-content>
+          <ui-summary>
+            <a>Veronika Ossi</a> added you as a friend
+            <ui-date>1 Hour Ago</ui-date>
+          </ui-summary>
+        </ui-content>
+      </ui-event>
+      <ui-event>
+        <ui-label type="div">
+          <ui-icon css="pencil"></ui-icon>
+        </ui-label>
+        <ui-content>
+          <ui-summary>
+            You posted on your friend <a>Stevie Feliciano's</a> wall.
+            <ui-date>Today</ui-date>
+          </ui-summary>
+        </ui-content>
+      </ui-event>
+    </ui-feed>
+    <ui-divider></ui-divider>
+    <ui-statistics>
+      <ui-statistic>
+        <ui-value>31,200</ui-value>
+        <ui-label type="div">Saves</ui-label>
+      </ui-statistic>
+      <ui-statistic>
+        <ui-value css="text">Three<br>Thousand</ui-value>
+        <ui-label type="div">Signups</ui-label>
+      </ui-statistic>
+      <ui-statistic>
+        <ui-value><ui-icon css="plane">5</ui-icon></ui-value>
+        <ui-label type="div">Flights</ui-label>
+      </ui-statistic>
+      <ui-statistic>
+        <ui-value></ui-image>42</ui-value>
+        <ui-label type="div">Team Members</ui-label>
+      </ui-statistic>
+    </ui-statistics>
+    <ui-divider></ui-divider>
+    <ui-accordion css="styled fluid">
+      <ui-title><ui-icon css="dropdown">What is a dog?</ui-icon></ui-title>
+      <ui-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</ui-content>
+      <ui-title><ui-icon css="dropdown">What kinds of dogs are there?</ui-icon></ui-title>
+      <ui-content>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</ui-content>
+      <ui-title><ui-icon css="dropdown">How do you acquire a dog?</ui-icon></ui-title>
+      <ui-content>
+        <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+        <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+      </ui-content>
+    </ui-accordion>
+    <ui-divider></ui-divider>
+    <ui-form>
+      <ui-field>
+        <ui-checkbox>
+          <input type="checkbox" name="example">
+          <label>Make my profile visible</label>
+        </ui-checkbox>
+      </ui-field>
+      <ui-field>
+        <ui-checkbox css="radio">
+          <input type="radio" name="radio" checked="checked">
+          <label>Radio choice</label>
+        </ui-checkbox>
+      </ui-field>
+      <ui-field>
+        <ui-checkbox css="slider">
+          <input type="checkbox" name="newsletter">
+          <label>Accept terms and conditions</label>
+        </ui-checkbox>
+      </ui-field>
+      <ui-field>
+        <ui-checkbox css="toggle">
+          <input type="checkbox" name="public" checked="checked">
+          <label>Subscribe to weekly newsletter</label>
+        </ui-checkbox>
+      </ui-field>
+    </ui-form>
+    <ui-divider></ui-divider>
+    <ui-button v-on:click="showDimmer">Show Dimmer</ui-button>
+    <ui-dimmer v-ref:mydimmer css="page">
+      <ui-content>
+        <div class="center">
+          <ui-header type="h2" css="inverted icon"><ui-icon css="heart">Dimmed Message!</ui-icon></ui-header>
+        </div>
+      </ui-content>
+    </ui-dimmer>
+    <ui-divider></ui-divider>
+    <ui-form>
+      <ui-field>
+        <ui-dropdown css="selection">
+          <ui-icon css="dropdown"></ui-icon>
+          <ui-text css="default">Gender</ui-text>
+          <ui-menu class="menu">
+            <ui-item data-value="1">Male</ui-item>
+            <ui-item data-value="0">Female</ui-item>
+          </ui-menu>
+        </ui-dropdown>
+      </ui-field>
+      <ui-field>
+        <ui-dropdown type="select">
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </ui-dropdown>
+      </ui-field>
+      <ui-field>
+        <ui-dropdown css="fluid multiple search normal selection" :setting="{maxSelections:2}">
+          <input type="hidden" name="country">
+          <ui-icon css="dropdown"></ui-icon>
+          <ui-text css="default">Select Country</ui-text>
+          <ui-menu class="menu">
+            <ui-item data-value="cn"><ui-flag></ui-flag>China</ui-item>
+            <ui-item data-value="us"><ui-flag css="us"></ui-flag>United States</ui-item>
+            <ui-item data-value="gb"><ui-flag css="gb"></ui-flag>England</ui-item>
+            <ui-item data-value="jp"><ui-flag css="jp"></ui-flag>Japan</ui-item>
+            <ui-item data-value="eu"><ui-flag css="eu"></ui-flag>European Union</ui-item>
+          </ui-menu>
+        </ui-dropdown>
+      </ui-field>
+    </ui-form>
+    <ui-divider></ui-divider>
+    <ui-button v-on:click="showModal">Show Modal</ui-button>
+    <ui-modal v-ref:mymodal>
+      <ui-icon css="close"></ui-icon>
+      <ui-header>Profile Picture</ui-header>
+      <ui-content css="image">
+        <ui-image type="div" css="small rounded" src="example/static/user.jpg"></ui-image>
+        <ui-description>
+          <ui-header>We've auto-chosen a profile image for you.</ui-header>
+          <p>We've grabbed the following image from the <a>gravatar</a> image associated with your registered e-mail address.</p>
+          <p>Is it okay to use this photo?</p>
+        </ui-description>
+      </ui-content>
+      <ui-actions>
+        <ui-button css="black deny">Nope</ui-button>
+        <ui-button css="positive right labeled icon">
+          Yep, that's me
+          <ui-icon css="checkmark"></ui-icon>
+        </ui-button>
+      </ui-actions>
+    </ui-modal>
+    <ui-divider></ui-divider>
+    <!--<ui-nag css="inline cookie">
+      <span class="title">
+        We use cookies to ensure you get the best experience on our website
+      </span>
+      <i class="close icon"></i>
+    </ui-nag>
+    <ui-divider></ui-divider>-->
+    <ui-button css="icon" data-tooltip="Add users to your feed">
+      <ui-icon css="add"></ui-icon>
+    </ui-button>
+    <ui-divider></ui-divider>
+    <ui-progress value="56">
+      <ui-bar percent="true"></ui-bar>
+      <ui-label class="label">Uploading Files</ui-label>
+    </ui-progress>
+    <ui-divider></ui-divider>
+    <ui-rating css="star" value="3" max="5"></ui-rating>
+    <ui-divider></ui-divider>
+    <ui-divider></ui-divider>
+    <ui-divider></ui-divider>
+    <ui-divider></ui-divider>
     <p>
       Powered by <a href="//github.com/miaolz123/vue-ui-semantic" target="_blank">VueUiSemantic</a>
     </p>
@@ -139,7 +426,15 @@
   <script>
     Vue.use(VueUiSemantic);
     var vm = new Vue({
-      el: "body"
+      el: "body",
+      methods: {
+        showDimmer: function() {
+          this.$refs.mydimmer.show();
+        },
+        showModal: function() {
+          this.$refs.mymodal.show();
+        },
+      },
     });
   </script>
 </body>

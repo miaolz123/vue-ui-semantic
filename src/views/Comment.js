@@ -1,4 +1,4 @@
-export const Content = {
+export const Comment = {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     class: {
@@ -12,12 +12,12 @@ export const Content = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `${this.css} content` : "content"
+      return this.class ? this.class : this.css ? `ui ${this.css} comment` : "ui comment"
     },
   },
 }
 
-export const Description = {
+export const Comments = {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     class: {
@@ -31,13 +31,13 @@ export const Description = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `${this.css} description` : "description"
+      return this.class ? this.class : this.css ? `ui ${this.css} comments` : "ui comments"
     },
   },
 }
 
-export const Meta = {
-  template: '<div :class="className"><slot></slot></div>',
+export const Avatar = {
+  template: '<a :class="className"><img :src="src"></a>',
   props: {
     class: {
       type: String,
@@ -47,16 +47,20 @@ export const Meta = {
       type: String,
       default: '',
     },
+    src: {
+      type: String,
+      default: '',
+    },
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `${this.css} meta` : "meta"
+      return this.class ? this.class : this.css ? `${this.css} avatar` : "avatar"
     },
   },
 }
 
-export const Text = {
-  template: '<div :class="className"><slot></slot></div>',
+export const Author = {
+  template: '<a :class="className"><slot></slot></a>',
   props: {
     class: {
       type: String,
@@ -69,12 +73,12 @@ export const Text = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `${this.css} text` : "text"
+      return this.class ? this.class : this.css ? `${this.css} author` : "author"
     },
   },
 }
 
-export const Title = {
+export const Metadata = {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     class: {
@@ -88,7 +92,26 @@ export const Title = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `${this.css} title` : "title"
+      return this.class ? this.class : this.css ? `${this.css} metadata` : "metadata"
+    },
+  },
+}
+
+export const Actions = {
+  template: '<div :class="className"><slot></slot></div>',
+  props: {
+    class: {
+      type: String,
+      default: '',
+    },
+    css: {
+      type: String,
+      default: '',
+    },
+  },
+  computed: {
+    className: function () {
+      return this.class ? this.class : this.css ? `${this.css} actions` : "actions"
     },
   },
 }

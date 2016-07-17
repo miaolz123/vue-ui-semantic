@@ -1,4 +1,4 @@
-export const Header = {
+export default {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     type: {
@@ -13,10 +13,13 @@ export const Header = {
       type: String,
       default: '',
     },
+    setting: {
+      type: Object,
+    },
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `ui ${this.css} header` : "ui header"
+      return this.class ? this.class : this.css ? `ui ${this.css} dropdown` : "ui dropdown"
     },
   },
   ready() {
@@ -27,24 +30,6 @@ export const Header = {
       newNode.innerHTML = this.$el.innerHTML
       this.$el.parentNode.replaceChild(newNode, this.$el)
     }
-  },
-}
-
-export const SubHeader = {
-  template: '<div :class="className"><slot></slot></div>',
-  props: {
-    class: {
-      type: String,
-      default: '',
-    },
-    css: {
-      type: String,
-      default: '',
-    },
-  },
-  computed: {
-    className: function () {
-      return this.class ? this.class : this.css ? `sub ${this.css} header` : "sub header"
-    },
+    $(this.$el).dropdown(this.setting)
   },
 }

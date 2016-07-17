@@ -1,5 +1,5 @@
-export const Button = {
-  template: '<div :class="className"><slot></slot></div>',
+export const Shape = {
+  template: '<div :class="className"><div class="sides"><slot></slot></div></div>',
   props: {
     class: {
       type: String,
@@ -12,12 +12,12 @@ export const Button = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `ui ${this.css} button` : "ui button"
+      return this.class ? this.class : this.css ? `ui ${this.css} shape` : "ui shape"
     },
   },
 }
 
-export const Buttons = {
+export const Side = {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     class: {
@@ -31,7 +31,7 @@ export const Buttons = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `ui ${this.css} buttons` : "ui buttons"
+      return this.class ? this.class : this.css ? `${this.css} side` : "side"
     },
   },
 }

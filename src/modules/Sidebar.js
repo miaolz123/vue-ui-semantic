@@ -1,4 +1,4 @@
-export const Button = {
+export const Sidebar = {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     class: {
@@ -12,12 +12,12 @@ export const Button = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `ui ${this.css} button` : "ui button"
+      return this.class ? this.class : this.css ? `ui ${this.css} sidebar` : "ui sidebar"
     },
   },
 }
 
-export const Buttons = {
+export const Pusher = {
   template: '<div :class="className"><slot></slot></div>',
   props: {
     class: {
@@ -31,7 +31,7 @@ export const Buttons = {
   },
   computed: {
     className: function () {
-      return this.class ? this.class : this.css ? `ui ${this.css} buttons` : "ui buttons"
+      return this.class ? this.class : this.css ? `${this.css} pusher` : "pusher"
     },
   },
 }

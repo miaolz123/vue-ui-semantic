@@ -1,5 +1,5 @@
 /**
- * vue-ui-semantic v0.1.0
+ * vue-ui-semantic v0.1.1
  * https://github.com/miaolz123/vue-ui-semantic
  * MIT License
  */
@@ -65,6 +65,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.install = install;
 
 	var _util = __webpack_require__(1);
 
@@ -118,17 +119,95 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Segment = __webpack_require__(15);
 
-	var _Segment2 = _interopRequireDefault(_Segment);
-
 	var _Step = __webpack_require__(16);
+
+	var _Breadcrumb = __webpack_require__(17);
+
+	var _Form = __webpack_require__(18);
+
+	var _Grid = __webpack_require__(19);
+
+	var _Menu = __webpack_require__(20);
+
+	var _Menu2 = _interopRequireDefault(_Menu);
+
+	var _Message = __webpack_require__(21);
+
+	var _Message2 = _interopRequireDefault(_Message);
+
+	var _Table = __webpack_require__(22);
+
+	var _Table2 = _interopRequireDefault(_Table);
+
+	var _Advertisement = __webpack_require__(23);
+
+	var _Advertisement2 = _interopRequireDefault(_Advertisement);
+
+	var _Card = __webpack_require__(24);
+
+	var _Comment = __webpack_require__(25);
+
+	var _Feed = __webpack_require__(26);
+
+	var _Item = __webpack_require__(27);
+
+	var _Statistic = __webpack_require__(28);
+
+	var _Accordion = __webpack_require__(29);
+
+	var _Accordion2 = _interopRequireDefault(_Accordion);
+
+	var _Checkbox = __webpack_require__(30);
+
+	var _Checkbox2 = _interopRequireDefault(_Checkbox);
+
+	var _Dimmer = __webpack_require__(31);
+
+	var _Dimmer2 = _interopRequireDefault(_Dimmer);
+
+	var _Dropdown = __webpack_require__(32);
+
+	var _Dropdown2 = _interopRequireDefault(_Dropdown);
+
+	var _Modal = __webpack_require__(33);
+
+	var _Modal2 = _interopRequireDefault(_Modal);
+
+	var _Nag = __webpack_require__(34);
+
+	var _Nag2 = _interopRequireDefault(_Nag);
+
+	var _Popup = __webpack_require__(35);
+
+	var _Popup2 = _interopRequireDefault(_Popup);
+
+	var _Progress = __webpack_require__(36);
+
+	var _Rating = __webpack_require__(37);
+
+	var _Rating2 = _interopRequireDefault(_Rating);
+
+	var _Search = __webpack_require__(38);
+
+	var _Shape = __webpack_require__(39);
+
+	var _Sidebar = __webpack_require__(40);
+
+	var _Sticky = __webpack_require__(41);
+
+	var _Sticky2 = _interopRequireDefault(_Sticky);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = {
+	// elements
+
+
+	var Ui = {
 	  // util
 	  Content: _util.Content,
 	  Description: _util.Description,
-	  Item: _util.Item,
+	  Meta: _util.Meta,
+	  Text: _util.Text,
 	  Title: _util.Title,
 	  // elements
 	  Button: _Button.Button,
@@ -136,12 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Container: _Container2.default,
 	  Divider: _Divider2.default,
 	  Flag: _Flag2.default,
-	  H1: _Header.H1,
-	  H2: _Header.H2,
-	  H3: _Header.H3,
-	  H4: _Header.H4,
-	  H5: _Header.H5,
-	  H6: _Header.H6,
+	  Header: _Header.Header,
 	  SubHeader: _Header.SubHeader,
 	  Icon: _Icon2.default,
 	  Image: _Image2.default,
@@ -151,10 +225,149 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Loader: _Loader2.default,
 	  Rail: _Rail2.default,
 	  Reveal: _Reveal2.default,
-	  Segment: _Segment2.default,
+	  Segment: _Segment.Segment,
+	  Segments: _Segment.Segments,
 	  Step: _Step.Step,
-	  Steps: _Step.Steps
+	  Steps: _Step.Steps,
+	  // collections
+	  Breadcrumb: _Breadcrumb.Breadcrumb,
+	  Section: _Breadcrumb.Section,
+	  Field: _Form.Field,
+	  Fields: _Form.Fields,
+	  Form: _Form.Form,
+	  Grid: _Grid.Grid,
+	  Column: _Grid.Column,
+	  Row: _Grid.Row,
+	  Menu: _Menu2.default,
+	  Message: _Message2.default,
+	  Table: _Table2.default,
+	  // views
+	  Ad: _Advertisement2.default,
+	  Card: _Card.Card,
+	  Cards: _Card.Cards,
+	  Comment: _Comment.Comment,
+	  Comments: _Comment.Comments,
+	  Avatar: _Comment.Avatar,
+	  Author: _Comment.Author,
+	  Metadata: _Comment.Metadata,
+	  Actions: _Comment.Actions,
+	  Feed: _Feed.Feed,
+	  Event: _Feed.Event,
+	  Summary: _Feed.Summary,
+	  Date: _Feed.Date,
+	  Items: _Item.Items,
+	  Item: _Item.Item,
+	  Statistic: _Statistic.Statistic,
+	  Statistics: _Statistic.Statistics,
+	  Value: _Statistic.Value,
+	  // modules
+	  Accordion: _Accordion2.default,
+	  Checkbox: _Checkbox2.default,
+	  Dimmer: _Dimmer2.default,
+	  Dropdown: _Dropdown2.default,
+	  Modal: _Modal2.default,
+	  Nag: _Nag2.default,
+	  Popup: _Popup2.default,
+	  Progress: _Progress.Progress,
+	  Bar: _Progress.Bar,
+	  Rating: _Rating2.default,
+	  Search: _Search.Search,
+	  Results: _Search.Results,
+	  Shape: _Shape.Shape,
+	  Sides: _Shape.Sides,
+	  Side: _Shape.Side,
+	  Sidebar: _Sidebar.Sidebar,
+	  Pusher: _Sidebar.Pusher,
+	  Sticky: _Sticky2.default
 	};
+	// modules
+
+	// views
+
+	// collections
+	// util
+
+
+	function install(Vue) {
+	  // util
+	  Vue.component('ui-content', Ui.Content);
+	  Vue.component('ui-description', Ui.Description);
+	  Vue.component('ui-meta', Ui.Meta);
+	  Vue.component('ui-text', Ui.Text);
+	  Vue.component('ui-title', Ui.Title);
+	  // elements
+	  Vue.component('ui-button', Ui.Button);
+	  Vue.component('ui-buttons', Ui.Buttons);
+	  Vue.component('ui-container', Ui.Container);
+	  Vue.component('ui-divider', Ui.Divider);
+	  Vue.component('ui-flag', Ui.Flag);
+	  Vue.component('ui-header', Ui.Header);
+	  Vue.component('ui-sub-header', Ui.SubHeader);
+	  Vue.component('ui-icon', Ui.Icon);
+	  Vue.component('ui-image', Ui.Image);
+	  Vue.component('ui-input', Ui.Input);
+	  Vue.component('ui-label', Ui.Label);
+	  Vue.component('ui-list', Ui.List);
+	  Vue.component('ui-loader', Ui.Loader);
+	  Vue.component('ui-rail', Ui.Rail);
+	  Vue.component('ui-reveal', Ui.Reveal);
+	  Vue.component('ui-segment', Ui.Segment);
+	  Vue.component('ui-segments', Ui.Segments);
+	  Vue.component('ui-step', Ui.Step);
+	  Vue.component('ui-steps', Ui.Steps);
+	  // collections
+	  Vue.component('ui-breadcrumb', Ui.Breadcrumb);
+	  Vue.component('ui-section', Ui.Section);
+	  Vue.component('ui-field', Ui.Field);
+	  Vue.component('ui-fields', Ui.Fields);
+	  Vue.component('ui-form', Ui.Form);
+	  Vue.component('ui-grid', Ui.Grid);
+	  Vue.component('ui-column', Ui.Column);
+	  Vue.component('ui-row', Ui.Row);
+	  Vue.component('ui-menu', Ui.Menu);
+	  Vue.component('ui-message', Ui.Message);
+	  Vue.component('ui-table', Ui.Table);
+	  // views
+	  Vue.component('ui-ad', Ui.Ad);
+	  Vue.component('ui-card', Ui.Card);
+	  Vue.component('ui-cards', Ui.Cards);
+	  Vue.component('ui-comment', Ui.Comment);
+	  Vue.component('ui-comments', Ui.Comments);
+	  Vue.component('ui-avatar', Ui.Avatar);
+	  Vue.component('ui-author', Ui.Author);
+	  Vue.component('ui-metadata', Ui.Metadata);
+	  Vue.component('ui-actions', Ui.Actions);
+	  Vue.component('ui-feed', Ui.Feed);
+	  Vue.component('ui-event', Ui.Event);
+	  Vue.component('ui-summary', Ui.Summary);
+	  Vue.component('ui-date', Ui.Date);
+	  Vue.component('ui-items', Ui.Items);
+	  Vue.component('ui-item', Ui.Item);
+	  Vue.component('ui-statistic', Ui.Statistic);
+	  Vue.component('ui-statistics', Ui.Statistics);
+	  Vue.component('ui-value', Ui.Value);
+	  // modules
+	  Vue.component('ui-accordion', Ui.Accordion);
+	  Vue.component('ui-checkbox', Ui.Checkbox);
+	  Vue.component('ui-dimmer', Ui.Dimmer);
+	  Vue.component('ui-dropdown', Ui.Dropdown);
+	  Vue.component('ui-modal', Ui.Modal);
+	  Vue.component('ui-nag', Ui.Nag);
+	  Vue.component('ui-popup', Ui.Popup);
+	  Vue.component('ui-progress', Ui.Progress);
+	  Vue.component('ui-bar', Ui.Bar);
+	  Vue.component('ui-rating', Ui.Rating);
+	  Vue.component('ui-search', Ui.Search);
+	  Vue.component('ui-results', Ui.Results);
+	  Vue.component('ui-shape', Ui.Shape);
+	  Vue.component('ui-sides', Ui.Sides);
+	  Vue.component('ui-side', Ui.Side);
+	  Vue.component('ui-sidebar', Ui.Sidebar);
+	  Vue.component('ui-pusher', Ui.Pusher);
+	  Vue.component('ui-sticky', Ui.Sticky);
+	}
+
+	exports.default = Ui;
 
 /***/ },
 /* 1 */
@@ -203,7 +416,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 
-	var Item = exports.Item = {
+	var Meta = exports.Meta = {
 	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
 	    class: {
@@ -217,7 +430,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  computed: {
 	    className: function className() {
-	      return this.class ? this.class : this.css ? this.css + ' item' : "item";
+	      return this.class ? this.class : this.css ? this.css + ' meta' : "meta";
+	    }
+	  }
+	};
+
+	var Text = exports.Text = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' text' : "text";
 	    }
 	  }
 	};
@@ -251,7 +483,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	var Button = exports.Button = {
-	  template: '<div :class="className"><slot>Default</slot></div>',
+	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
 	    class: {
 	      type: String,
@@ -372,9 +604,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var H1 = exports.H1 = {
-	  template: '<h1 :class="className"><slot></slot></h1>',
+	var Header = exports.Header = {
+	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
+	    type: {
+	      type: String,
+	      default: ''
+	    },
 	    class: {
 	      type: String,
 	      default: ''
@@ -388,100 +624,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
 	    }
-	  }
-	};
-
-	var H2 = exports.H2 = {
-	  template: '<h2 :class="className"><slot></slot></h2>',
-	  props: {
-	    class: {
-	      type: String,
-	      default: ''
-	    },
-	    css: {
-	      type: String,
-	      default: ''
-	    }
 	  },
-	  computed: {
-	    className: function className() {
-	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
-	    }
-	  }
-	};
-
-	var H3 = exports.H3 = {
-	  template: '<h3 :class="className"><slot></slot></h3>',
-	  props: {
-	    class: {
-	      type: String,
-	      default: ''
-	    },
-	    css: {
-	      type: String,
-	      default: ''
-	    }
-	  },
-	  computed: {
-	    className: function className() {
-	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
-	    }
-	  }
-	};
-
-	var H4 = exports.H4 = {
-	  template: '<h4 :class="className"><slot></slot></h4>',
-	  props: {
-	    class: {
-	      type: String,
-	      default: ''
-	    },
-	    css: {
-	      type: String,
-	      default: ''
-	    }
-	  },
-	  computed: {
-	    className: function className() {
-	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
-	    }
-	  }
-	};
-
-	var H5 = exports.H5 = {
-	  template: '<h5 :class="className"><slot></slot></h5>',
-	  props: {
-	    class: {
-	      type: String,
-	      default: ''
-	    },
-	    css: {
-	      type: String,
-	      default: ''
-	    }
-	  },
-	  computed: {
-	    className: function className() {
-	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
-	    }
-	  }
-	};
-
-	var H6 = exports.H6 = {
-	  template: '<h6 :class="className"><slot></slot></h6>',
-	  props: {
-	    class: {
-	      type: String,
-	      default: ''
-	    },
-	    css: {
-	      type: String,
-	      default: ''
-	    }
-	  },
-	  computed: {
-	    className: function className() {
-	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' header' : "ui header";
+	  ready: function ready() {
+	    if (this.type) {
+	      var newNode = document.createElement(this.type);
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
+	      newNode.innerHTML = this.$el.innerHTML;
+	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
 	  }
 	};
@@ -536,6 +687,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	  template: '<img :class="className" :src="src">',
 	  props: {
+	    type: {
+	      type: String,
+	      default: ''
+	    },
 	    class: {
 	      type: String,
 	      default: ''
@@ -552,6 +707,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' image' : "ui image";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.type && this.type !== 'img') {
+	      var newNode = document.createElement(this.type);
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
+	      newNode.innerHTML = '<img src="' + this.src + '">';
+	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
 	  }
 	};
@@ -596,6 +761,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	  template: '<a :class="className"><slot></slot></a>',
 	  props: {
+	    type: {
+	      type: String,
+	      default: ''
+	    },
 	    class: {
 	      type: String,
 	      default: ''
@@ -608,6 +777,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' label' : "ui label";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.type) {
+	      var newNode = document.createElement(this.type);
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
+	      if (this.type !== 'a') {
+	        newNode.className = this.class ? this.class : this.css ? this.css + ' label' : "label";
+	      } else newNode.className = this.$el.className;
+	      newNode.innerHTML = this.$el.innerHTML;
+	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
 	  }
 	};
@@ -733,7 +915,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = {
+	var Segment = exports.Segment = {
 	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
 	    class: {
@@ -748,6 +930,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' segment' : "ui segment";
+	    }
+	  }
+	};
+
+	var Segments = exports.Segments = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' segments' : "ui segments";
 	    }
 	  }
 	};
@@ -795,6 +996,1244 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' steps' : "ui steps";
+	    }
+	  }
+	};
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Breadcrumb = exports.Breadcrumb = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' breadcrumb' : "ui breadcrumb";
+	    }
+	  }
+	};
+
+	var Section = exports.Section = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    type: {
+	      type: String,
+	      default: ''
+	    },
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' section' : "section";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.type) {
+	      var newNode = document.createElement(this.type);
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
+	      newNode.innerHTML = this.$el.innerHTML;
+	      this.$el.parentNode.replaceChild(newNode, this.$el);
+	    }
+	  }
+	};
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Field = exports.Field = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' field' : "field";
+	    }
+	  }
+	};
+
+	var Fields = exports.Fields = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' fields' : "fields";
+	    }
+	  }
+	};
+
+	var Form = exports.Form = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' form' : "ui form";
+	    }
+	  }
+	};
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Grid = exports.Grid = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' grid' : "ui grid";
+	    }
+	  }
+	};
+
+	var Column = exports.Column = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' column' : "column";
+	    }
+	  }
+	};
+
+	var Row = exports.Row = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' row' : "row";
+	    }
+	  }
+	};
+
+/***/ },
+/* 20 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css === 'right' ? 'right menu' : 'ui ' + this.css + ' menu' : "ui menu";
+	    }
+	  }
+	};
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' message' : "ui message";
+	    }
+	  }
+	};
+
+/***/ },
+/* 22 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' table' : "ui table";
+	    }
+	  },
+	  ready: function ready() {
+	    var newNode = document.createElement('table');
+	    for (var i = 0; i < this.$el.attributes.length; i++) {
+	      newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	    }
+	    newNode.innerHTML = this.$el.innerHTML;
+	    this.$el.parentNode.replaceChild(newNode, this.$el);
+	  }
+	};
+
+/***/ },
+/* 23 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' ad' : "ui ad";
+	    }
+	  }
+	};
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Card = exports.Card = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' card' : "ui card";
+	    }
+	  }
+	};
+
+	var Cards = exports.Cards = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' cards' : "ui cards";
+	    }
+	  }
+	};
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Comment = exports.Comment = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' comment' : "ui comment";
+	    }
+	  }
+	};
+
+	var Comments = exports.Comments = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' comments' : "ui comments";
+	    }
+	  }
+	};
+
+	var Avatar = exports.Avatar = {
+	  template: '<a :class="className"><img :src="src"></a>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    },
+	    src: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' avatar' : "avatar";
+	    }
+	  }
+	};
+
+	var Author = exports.Author = {
+	  template: '<a :class="className"><slot></slot></a>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' author' : "author";
+	    }
+	  }
+	};
+
+	var Metadata = exports.Metadata = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' metadata' : "metadata";
+	    }
+	  }
+	};
+
+	var Actions = exports.Actions = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' actions' : "actions";
+	    }
+	  }
+	};
+
+/***/ },
+/* 26 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Feed = exports.Feed = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' feed' : "ui feed";
+	    }
+	  }
+	};
+
+	var Event = exports.Event = {
+	  template: '<div :class="className"></slot><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' event' : "event";
+	    }
+	  }
+	};
+
+	var Summary = exports.Summary = {
+	  template: '<div :class="className"></slot><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' summary' : "summary";
+	    }
+	  }
+	};
+
+	var Date = exports.Date = {
+	  template: '<div :class="className"></slot><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' date' : "date";
+	    }
+	  }
+	};
+
+/***/ },
+/* 27 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Items = exports.Items = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' items' : "ui items";
+	    }
+	  }
+	};
+
+	var Item = exports.Item = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    type: {
+	      type: String,
+	      default: ''
+	    },
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' item' : "item";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.type) {
+	      var newNode = document.createElement(this.type);
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
+	      newNode.innerHTML = this.$el.innerHTML;
+	      this.$el.parentNode.replaceChild(newNode, this.$el);
+	    }
+	  }
+	};
+
+/***/ },
+/* 28 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Statistic = exports.Statistic = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' statistic' : "ui statistic";
+	    }
+	  }
+	};
+
+	var Statistics = exports.Statistics = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' statistics' : "ui statistics";
+	    }
+	  }
+	};
+
+	var Value = exports.Value = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    },
+	    format: {
+	      default: true
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' value' : "value";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.format) {
+	      this.$el.innerHTML = this.$el.innerHTML.replace(/(^|\s)\d+(?=\.?\d*($|\s))/g, function (m) {
+	        return m.replace(/(?=(?!\b)(\d{3})+$)/g, ',');
+	      });
+	    }
+	  }
+	};
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' accordion' : "ui accordion";
+	    }
+	  },
+	  ready: function ready() {
+	    $(this.$el).accordion();
+	  }
+	};
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' checkbox' : "ui checkbox";
+	    }
+	  }
+	};
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' dimmer' : "ui dimmer";
+	    }
+	  },
+	  methods: {
+	    show: function show() {
+	      $(this.$el).dimmer('show');
+	    },
+	    hide: function hide() {
+	      $(this.$el).dimmer('hide');
+	    }
+	  }
+	};
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    type: {
+	      type: String,
+	      default: ''
+	    },
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    },
+	    setting: {
+	      type: Object
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' dropdown' : "ui dropdown";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.type) {
+	      var newNode = document.createElement(this.type);
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
+	      newNode.innerHTML = this.$el.innerHTML;
+	      this.$el.parentNode.replaceChild(newNode, this.$el);
+	    }
+	    $(this.$el).dropdown(this.setting);
+	  }
+	};
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' modal' : "ui modal";
+	    }
+	  },
+	  methods: {
+	    show: function show() {
+	      $(this.$el).modal('show');
+	    }
+	  }
+	};
+
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' nag' : "ui nag";
+	    }
+	  },
+	  ready: function ready() {
+	    $(this.$el).nag('show');
+	  }
+	};
+
+/***/ },
+/* 35 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' popup' : "ui popup";
+	    }
+	  }
+	};
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Progress = exports.Progress = {
+	  template: '<div :class="className" :data-percent="value"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    },
+	    value: 0
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' progress' : "ui progress";
+	    }
+	  },
+	  ready: function ready() {
+	    $(this.$el).progress();
+	  }
+	};
+
+	var Bar = exports.Bar = {
+	  template: '<div :class="className"></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    },
+	    percent: ''
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' bar' : "bar";
+	    }
+	  },
+	  ready: function ready() {
+	    if (this.percent) {
+	      this.$el.innerHTML = '<div class="progress"></div>';
+	    }
+	  }
+	};
+
+/***/ },
+/* 37 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className" :data-rating="value" :data-max-rating="max"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    },
+	    value: {
+	      default: 0
+	    },
+	    max: {
+	      default: 5
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' rating' : "ui rating";
+	    }
+	  },
+	  ready: function ready() {
+	    $(this.$el).rating();
+	  }
+	};
+
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Search = exports.Search = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' search' : "ui search";
+	    }
+	  }
+	};
+
+	var Results = exports.Results = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' results' : "results";
+	    }
+	  }
+	};
+
+/***/ },
+/* 39 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Shape = exports.Shape = {
+	  template: '<div :class="className"><div class="sides"><slot></slot></div></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' shape' : "ui shape";
+	    }
+	  },
+	  ready: function ready() {
+	    $(this.$el).shape();
+	  }
+	};
+
+	var Sides = exports.Sides = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' sides' : "sides";
+	    }
+	  }
+	};
+
+	var Side = exports.Side = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' side' : "side";
+	    }
+	  }
+	};
+
+/***/ },
+/* 40 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var Sidebar = exports.Sidebar = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' sidebar' : "ui sidebar";
+	    }
+	  },
+	  methods: {
+	    show: function show() {
+	      $(this.$el).sidebar('show');
+	    },
+	    hide: function hide() {
+	      $(this.$el).sidebar('hide');
+	    },
+	    toggle: function toggle() {
+	      $(this.$el).sidebar('toggle');
+	    }
+	  }
+	};
+
+	var Pusher = exports.Pusher = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' pusher' : "pusher";
+	    }
+	  }
+	};
+
+/***/ },
+/* 41 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' sticky' : "ui sticky";
 	    }
 	  }
 	};

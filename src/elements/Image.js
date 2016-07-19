@@ -26,8 +26,9 @@ export default {
   ready() {
     if (this.type && this.type !== 'img') {
       const newNode = document.createElement(this.type)
-      if (this.$el.id) newNode.id = this.$el.id
-      newNode.className = this.$el.className
+      for (let i = 0; i < this.$el.attributes.length; i++) {
+        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value)
+      }
       newNode.innerHTML = `<img src="${this.src}">`
       this.$el.parentNode.replaceChild(newNode, this.$el)
     }

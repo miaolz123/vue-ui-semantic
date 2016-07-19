@@ -15,6 +15,17 @@ export const Sidebar = {
       return this.class ? this.class : this.css ? `ui ${this.css} sidebar` : "ui sidebar"
     },
   },
+  methods: {
+    show() {
+      $(this.$el).sidebar('show')
+    },
+    hide() {
+      $(this.$el).sidebar('hide')
+    },
+    toggle() {
+      $(this.$el).sidebar('toggle')
+    },
+  },
 }
 
 export const Pusher = {

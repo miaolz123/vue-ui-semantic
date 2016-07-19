@@ -9,6 +9,13 @@
 </head>
 
 <body>
+  <ui-sidebar v-ref:mysidebar css="inverted vertical menu">
+    <ui-item type="a" href="#">1</ui-item>
+    <ui-item type="a" href="#">2</ui-item>
+    <ui-item type="a" href="#">3</ui-item>
+    <a class="item" @click="toggleSidebar">Close</a>
+  </ui-sidebar>
+  <ui-pusher>
   <ui-container>
     <br>
     <div>
@@ -106,6 +113,12 @@
         feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi
         vitae est. Mauris placerat eleifend leo.</p>
     </ui-segment>
+    <ui-segments css="piled">
+      <ui-segment css="yellow">Top</ui-segment>
+      <ui-segment css="red">Middle</ui-segment>
+      <ui-segment css="blue">Middle</ui-segment>
+      <ui-segment css="green">Bottom</ui-segment>
+    </ui-segments>
     <ui-divider></ui-divider>
     <ui-steps css="ordered">
       <ui-step css="completed">
@@ -275,7 +288,7 @@
     <ui-divider></ui-divider>
     <ui-statistics>
       <ui-statistic>
-        <ui-value>31,200</ui-value>
+        <ui-value>31200</ui-value>
         <ui-label type="div">Saves</ui-label>
       </ui-statistic>
       <ui-statistic>
@@ -331,7 +344,7 @@
       </ui-field>
     </ui-form>
     <ui-divider></ui-divider>
-    <ui-button v-on:click="showDimmer">Show Dimmer</ui-button>
+    <ui-button @click="showDimmer">Show Dimmer</ui-button>
     <ui-dimmer v-ref:mydimmer css="page">
       <ui-content>
         <div class="center">
@@ -373,7 +386,7 @@
       </ui-field>
     </ui-form>
     <ui-divider></ui-divider>
-    <ui-button v-on:click="showModal">Show Modal</ui-button>
+    <ui-button @click="showModal">Show Modal</ui-button>
     <ui-modal v-ref:mymodal>
       <ui-icon css="close"></ui-icon>
       <ui-header>Profile Picture</ui-header>
@@ -412,13 +425,31 @@
     <ui-divider></ui-divider>
     <ui-rating css="star" value="3" max="5"></ui-rating>
     <ui-divider></ui-divider>
+    <ui-search>
+      <ui-input css="icon">
+        <input type="text" placeholder="Search ...">
+        <ui-icon css="search"></ui-icon>
+      </ui-input>
+      <ui-results></ui-results>
+    </ui-search>
     <ui-divider></ui-divider>
+    <ui-shape css="cube">
+      <ui-sides>
+        <ui-side css="active">
+          <ui-content>
+            <div class="center">1</div>
+          </ui-content>
+        </ui-side>
+      </ui-sides>
+    </ui-shape>
     <ui-divider></ui-divider>
+    <ui-button @click="toggleSidebar">Sidebar Toggle</ui-button>
     <ui-divider></ui-divider>
     <p>
       Powered by <a href="//github.com/miaolz123/vue-ui-semantic" target="_blank">VueUiSemantic</a>
     </p>
   </ui-container>
+  </ui-pusher>
   <script src="example/static/jquery.js"></script>
   <script src="example/static/semantic.js"></script>
   <script src="example/static/vue.js"></script>
@@ -433,6 +464,9 @@
         },
         showModal: function() {
           this.$refs.mymodal.show();
+        },
+        toggleSidebar: function() {
+          this.$refs.mysidebar.toggle();
         },
       },
     });

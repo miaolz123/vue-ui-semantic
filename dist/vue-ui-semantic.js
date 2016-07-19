@@ -1,5 +1,5 @@
 /**
- * vue-ui-semantic v0.1.0
+ * vue-ui-semantic v0.1.1
  * https://github.com/miaolz123/vue-ui-semantic
  * MIT License
  */
@@ -67,235 +67,142 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	exports.install = install;
 
-	var _VueUiSemantic = __webpack_require__(1);
+	var _util = __webpack_require__(1);
 
-	var _VueUiSemantic2 = _interopRequireDefault(_VueUiSemantic);
+	var _Button = __webpack_require__(2);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function install(Vue) {
-	  // util
-	  Vue.component('ui-content', _VueUiSemantic2.default.Content);
-	  Vue.component('ui-description', _VueUiSemantic2.default.Description);
-	  Vue.component('ui-meta', _VueUiSemantic2.default.Meta);
-	  Vue.component('ui-text', _VueUiSemantic2.default.Text);
-	  Vue.component('ui-title', _VueUiSemantic2.default.Title);
-	  // elements
-	  Vue.component('ui-button', _VueUiSemantic2.default.Button);
-	  Vue.component('ui-buttons', _VueUiSemantic2.default.Buttons);
-	  Vue.component('ui-container', _VueUiSemantic2.default.Container);
-	  Vue.component('ui-divider', _VueUiSemantic2.default.Divider);
-	  Vue.component('ui-flag', _VueUiSemantic2.default.Flag);
-	  Vue.component('ui-header', _VueUiSemantic2.default.Header);
-	  Vue.component('ui-sub-header', _VueUiSemantic2.default.SubHeader);
-	  Vue.component('ui-icon', _VueUiSemantic2.default.Icon);
-	  Vue.component('ui-image', _VueUiSemantic2.default.Image);
-	  Vue.component('ui-input', _VueUiSemantic2.default.Input);
-	  Vue.component('ui-label', _VueUiSemantic2.default.Label);
-	  Vue.component('ui-list', _VueUiSemantic2.default.List);
-	  Vue.component('ui-loader', _VueUiSemantic2.default.Loader);
-	  Vue.component('ui-rail', _VueUiSemantic2.default.Rail);
-	  Vue.component('ui-reveal', _VueUiSemantic2.default.Reveal);
-	  Vue.component('ui-segment', _VueUiSemantic2.default.Segment);
-	  Vue.component('ui-step', _VueUiSemantic2.default.Step);
-	  Vue.component('ui-steps', _VueUiSemantic2.default.Steps);
-	  // collections
-	  Vue.component('ui-breadcrumb', _VueUiSemantic2.default.Breadcrumb);
-	  Vue.component('ui-section', _VueUiSemantic2.default.Section);
-	  Vue.component('ui-field', _VueUiSemantic2.default.Field);
-	  Vue.component('ui-fields', _VueUiSemantic2.default.Fields);
-	  Vue.component('ui-form', _VueUiSemantic2.default.Form);
-	  Vue.component('ui-grid', _VueUiSemantic2.default.Grid);
-	  Vue.component('ui-column', _VueUiSemantic2.default.Column);
-	  Vue.component('ui-row', _VueUiSemantic2.default.Row);
-	  Vue.component('ui-menu', _VueUiSemantic2.default.Menu);
-	  Vue.component('ui-message', _VueUiSemantic2.default.Message);
-	  Vue.component('ui-table', _VueUiSemantic2.default.Table);
-	  // views
-	  Vue.component('ui-ad', _VueUiSemantic2.default.Ad);
-	  Vue.component('ui-card', _VueUiSemantic2.default.Card);
-	  Vue.component('ui-cards', _VueUiSemantic2.default.Cards);
-	  Vue.component('ui-comment', _VueUiSemantic2.default.Comment);
-	  Vue.component('ui-comments', _VueUiSemantic2.default.Comments);
-	  Vue.component('ui-avatar', _VueUiSemantic2.default.Avatar);
-	  Vue.component('ui-author', _VueUiSemantic2.default.Author);
-	  Vue.component('ui-metadata', _VueUiSemantic2.default.Metadata);
-	  Vue.component('ui-actions', _VueUiSemantic2.default.Actions);
-	  Vue.component('ui-feed', _VueUiSemantic2.default.Feed);
-	  Vue.component('ui-event', _VueUiSemantic2.default.Event);
-	  Vue.component('ui-summary', _VueUiSemantic2.default.Summary);
-	  Vue.component('ui-date', _VueUiSemantic2.default.Date);
-	  Vue.component('ui-items', _VueUiSemantic2.default.Items);
-	  Vue.component('ui-item', _VueUiSemantic2.default.Item);
-	  Vue.component('ui-statistic', _VueUiSemantic2.default.Statistic);
-	  Vue.component('ui-statistics', _VueUiSemantic2.default.Statistics);
-	  Vue.component('ui-value', _VueUiSemantic2.default.Value);
-	  // modules
-	  Vue.component('ui-accordion', _VueUiSemantic2.default.Accordion);
-	  Vue.component('ui-checkbox', _VueUiSemantic2.default.Checkbox);
-	  Vue.component('ui-dimmer', _VueUiSemantic2.default.Dimmer);
-	  Vue.component('ui-dropdown', _VueUiSemantic2.default.Dropdown);
-	  Vue.component('ui-modal', _VueUiSemantic2.default.Modal);
-	  Vue.component('ui-nag', _VueUiSemantic2.default.Nag);
-	  Vue.component('ui-popup', _VueUiSemantic2.default.Popup);
-	  Vue.component('ui-progress', _VueUiSemantic2.default.Progress);
-	  Vue.component('ui-bar', _VueUiSemantic2.default.Bar);
-	  Vue.component('ui-rating', _VueUiSemantic2.default.Rating);
-	  Vue.component('ui-search', _VueUiSemantic2.default.Search);
-	  Vue.component('ui-results', _VueUiSemantic2.default.Results);
-	  Vue.component('ui-shape', _VueUiSemantic2.default.Shape);
-	  Vue.component('ui-side', _VueUiSemantic2.default.Side);
-	  Vue.component('ui-sidebar', _VueUiSemantic2.default.Sidebar);
-	  Vue.component('ui-pusher', _VueUiSemantic2.default.Pusher);
-	  Vue.component('ui-sticky', _VueUiSemantic2.default.Sticky);
-	}
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _util = __webpack_require__(2);
-
-	var _Button = __webpack_require__(3);
-
-	var _Container = __webpack_require__(4);
+	var _Container = __webpack_require__(3);
 
 	var _Container2 = _interopRequireDefault(_Container);
 
-	var _Divider = __webpack_require__(5);
+	var _Divider = __webpack_require__(4);
 
 	var _Divider2 = _interopRequireDefault(_Divider);
 
-	var _Flag = __webpack_require__(6);
+	var _Flag = __webpack_require__(5);
 
 	var _Flag2 = _interopRequireDefault(_Flag);
 
-	var _Header = __webpack_require__(7);
+	var _Header = __webpack_require__(6);
 
-	var _Icon = __webpack_require__(8);
+	var _Icon = __webpack_require__(7);
 
 	var _Icon2 = _interopRequireDefault(_Icon);
 
-	var _Image = __webpack_require__(9);
+	var _Image = __webpack_require__(8);
 
 	var _Image2 = _interopRequireDefault(_Image);
 
-	var _Input = __webpack_require__(10);
+	var _Input = __webpack_require__(9);
 
 	var _Input2 = _interopRequireDefault(_Input);
 
-	var _Label = __webpack_require__(11);
+	var _Label = __webpack_require__(10);
 
 	var _Label2 = _interopRequireDefault(_Label);
 
-	var _List = __webpack_require__(12);
+	var _List = __webpack_require__(11);
 
 	var _List2 = _interopRequireDefault(_List);
 
-	var _Loader = __webpack_require__(13);
+	var _Loader = __webpack_require__(12);
 
 	var _Loader2 = _interopRequireDefault(_Loader);
 
-	var _Rail = __webpack_require__(14);
+	var _Rail = __webpack_require__(13);
 
 	var _Rail2 = _interopRequireDefault(_Rail);
 
-	var _Reveal = __webpack_require__(15);
+	var _Reveal = __webpack_require__(14);
 
 	var _Reveal2 = _interopRequireDefault(_Reveal);
 
-	var _Segment = __webpack_require__(16);
+	var _Segment = __webpack_require__(15);
 
-	var _Segment2 = _interopRequireDefault(_Segment);
+	var _Step = __webpack_require__(16);
 
-	var _Step = __webpack_require__(17);
+	var _Breadcrumb = __webpack_require__(17);
 
-	var _Breadcrumb = __webpack_require__(18);
+	var _Form = __webpack_require__(18);
 
-	var _Form = __webpack_require__(19);
+	var _Grid = __webpack_require__(19);
 
-	var _Grid = __webpack_require__(20);
-
-	var _Menu = __webpack_require__(21);
+	var _Menu = __webpack_require__(20);
 
 	var _Menu2 = _interopRequireDefault(_Menu);
 
-	var _Message = __webpack_require__(22);
+	var _Message = __webpack_require__(21);
 
 	var _Message2 = _interopRequireDefault(_Message);
 
-	var _Table = __webpack_require__(23);
+	var _Table = __webpack_require__(22);
 
 	var _Table2 = _interopRequireDefault(_Table);
 
-	var _Advertisement = __webpack_require__(24);
+	var _Advertisement = __webpack_require__(23);
 
 	var _Advertisement2 = _interopRequireDefault(_Advertisement);
 
-	var _Card = __webpack_require__(25);
+	var _Card = __webpack_require__(24);
 
-	var _Comment = __webpack_require__(26);
+	var _Comment = __webpack_require__(25);
 
-	var _Feed = __webpack_require__(27);
+	var _Feed = __webpack_require__(26);
 
-	var _Item = __webpack_require__(28);
+	var _Item = __webpack_require__(27);
 
-	var _Statistic = __webpack_require__(29);
+	var _Statistic = __webpack_require__(28);
 
-	var _Accordion = __webpack_require__(30);
+	var _Accordion = __webpack_require__(29);
 
 	var _Accordion2 = _interopRequireDefault(_Accordion);
 
-	var _Checkbox = __webpack_require__(31);
+	var _Checkbox = __webpack_require__(30);
 
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
-	var _Dimmer = __webpack_require__(32);
+	var _Dimmer = __webpack_require__(31);
 
 	var _Dimmer2 = _interopRequireDefault(_Dimmer);
 
-	var _Dropdown = __webpack_require__(33);
+	var _Dropdown = __webpack_require__(32);
 
 	var _Dropdown2 = _interopRequireDefault(_Dropdown);
 
-	var _Modal = __webpack_require__(34);
+	var _Modal = __webpack_require__(33);
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
-	var _Nag = __webpack_require__(35);
+	var _Nag = __webpack_require__(34);
 
 	var _Nag2 = _interopRequireDefault(_Nag);
 
-	var _Popup = __webpack_require__(36);
+	var _Popup = __webpack_require__(35);
 
 	var _Popup2 = _interopRequireDefault(_Popup);
 
-	var _Progress = __webpack_require__(37);
+	var _Progress = __webpack_require__(36);
 
-	var _Rating = __webpack_require__(38);
+	var _Rating = __webpack_require__(37);
 
 	var _Rating2 = _interopRequireDefault(_Rating);
 
-	var _Search = __webpack_require__(39);
+	var _Search = __webpack_require__(38);
 
-	var _Shape = __webpack_require__(40);
+	var _Shape = __webpack_require__(39);
 
-	var _Sidebar = __webpack_require__(41);
+	var _Sidebar = __webpack_require__(40);
 
-	var _Sticky = __webpack_require__(42);
+	var _Sticky = __webpack_require__(41);
 
 	var _Sticky2 = _interopRequireDefault(_Sticky);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// elements
-	exports.default = {
+
+
+	var Ui = {
 	  // util
 	  Content: _util.Content,
 	  Description: _util.Description,
@@ -318,7 +225,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Loader: _Loader2.default,
 	  Rail: _Rail2.default,
 	  Reveal: _Reveal2.default,
-	  Segment: _Segment2.default,
+	  Segment: _Segment.Segment,
+	  Segments: _Segment.Segments,
 	  Step: _Step.Step,
 	  Steps: _Step.Steps,
 	  // collections
@@ -366,6 +274,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Search: _Search.Search,
 	  Results: _Search.Results,
 	  Shape: _Shape.Shape,
+	  Sides: _Shape.Sides,
 	  Side: _Shape.Side,
 	  Sidebar: _Sidebar.Sidebar,
 	  Pusher: _Sidebar.Pusher,
@@ -378,8 +287,90 @@ return /******/ (function(modules) { // webpackBootstrap
 	// collections
 	// util
 
+
+	function install(Vue) {
+	  // util
+	  Vue.component('ui-content', Ui.Content);
+	  Vue.component('ui-description', Ui.Description);
+	  Vue.component('ui-meta', Ui.Meta);
+	  Vue.component('ui-text', Ui.Text);
+	  Vue.component('ui-title', Ui.Title);
+	  // elements
+	  Vue.component('ui-button', Ui.Button);
+	  Vue.component('ui-buttons', Ui.Buttons);
+	  Vue.component('ui-container', Ui.Container);
+	  Vue.component('ui-divider', Ui.Divider);
+	  Vue.component('ui-flag', Ui.Flag);
+	  Vue.component('ui-header', Ui.Header);
+	  Vue.component('ui-sub-header', Ui.SubHeader);
+	  Vue.component('ui-icon', Ui.Icon);
+	  Vue.component('ui-image', Ui.Image);
+	  Vue.component('ui-input', Ui.Input);
+	  Vue.component('ui-label', Ui.Label);
+	  Vue.component('ui-list', Ui.List);
+	  Vue.component('ui-loader', Ui.Loader);
+	  Vue.component('ui-rail', Ui.Rail);
+	  Vue.component('ui-reveal', Ui.Reveal);
+	  Vue.component('ui-segment', Ui.Segment);
+	  Vue.component('ui-segments', Ui.Segments);
+	  Vue.component('ui-step', Ui.Step);
+	  Vue.component('ui-steps', Ui.Steps);
+	  // collections
+	  Vue.component('ui-breadcrumb', Ui.Breadcrumb);
+	  Vue.component('ui-section', Ui.Section);
+	  Vue.component('ui-field', Ui.Field);
+	  Vue.component('ui-fields', Ui.Fields);
+	  Vue.component('ui-form', Ui.Form);
+	  Vue.component('ui-grid', Ui.Grid);
+	  Vue.component('ui-column', Ui.Column);
+	  Vue.component('ui-row', Ui.Row);
+	  Vue.component('ui-menu', Ui.Menu);
+	  Vue.component('ui-message', Ui.Message);
+	  Vue.component('ui-table', Ui.Table);
+	  // views
+	  Vue.component('ui-ad', Ui.Ad);
+	  Vue.component('ui-card', Ui.Card);
+	  Vue.component('ui-cards', Ui.Cards);
+	  Vue.component('ui-comment', Ui.Comment);
+	  Vue.component('ui-comments', Ui.Comments);
+	  Vue.component('ui-avatar', Ui.Avatar);
+	  Vue.component('ui-author', Ui.Author);
+	  Vue.component('ui-metadata', Ui.Metadata);
+	  Vue.component('ui-actions', Ui.Actions);
+	  Vue.component('ui-feed', Ui.Feed);
+	  Vue.component('ui-event', Ui.Event);
+	  Vue.component('ui-summary', Ui.Summary);
+	  Vue.component('ui-date', Ui.Date);
+	  Vue.component('ui-items', Ui.Items);
+	  Vue.component('ui-item', Ui.Item);
+	  Vue.component('ui-statistic', Ui.Statistic);
+	  Vue.component('ui-statistics', Ui.Statistics);
+	  Vue.component('ui-value', Ui.Value);
+	  // modules
+	  Vue.component('ui-accordion', Ui.Accordion);
+	  Vue.component('ui-checkbox', Ui.Checkbox);
+	  Vue.component('ui-dimmer', Ui.Dimmer);
+	  Vue.component('ui-dropdown', Ui.Dropdown);
+	  Vue.component('ui-modal', Ui.Modal);
+	  Vue.component('ui-nag', Ui.Nag);
+	  Vue.component('ui-popup', Ui.Popup);
+	  Vue.component('ui-progress', Ui.Progress);
+	  Vue.component('ui-bar', Ui.Bar);
+	  Vue.component('ui-rating', Ui.Rating);
+	  Vue.component('ui-search', Ui.Search);
+	  Vue.component('ui-results', Ui.Results);
+	  Vue.component('ui-shape', Ui.Shape);
+	  Vue.component('ui-sides', Ui.Sides);
+	  Vue.component('ui-side', Ui.Side);
+	  Vue.component('ui-sidebar', Ui.Sidebar);
+	  Vue.component('ui-pusher', Ui.Pusher);
+	  Vue.component('ui-sticky', Ui.Sticky);
+	}
+
+	exports.default = Ui;
+
 /***/ },
-/* 2 */
+/* 1 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -483,7 +474,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -530,7 +521,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 4 */
+/* 3 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -558,7 +549,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -586,7 +577,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -605,7 +596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -637,8 +628,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.type) {
 	      var newNode = document.createElement(this.type);
-	      if (this.$el.id) newNode.id = this.$el.id;
-	      newNode.className = this.$el.className;
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
 	      newNode.innerHTML = this.$el.innerHTML;
 	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
@@ -665,7 +657,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -684,7 +676,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -720,8 +712,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.type && this.type !== 'img') {
 	      var newNode = document.createElement(this.type);
-	      if (this.$el.id) newNode.id = this.$el.id;
-	      newNode.className = this.$el.className;
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
 	      newNode.innerHTML = '<img src="' + this.src + '">';
 	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
@@ -729,7 +722,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -757,7 +750,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -789,7 +782,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.type) {
 	      var newNode = document.createElement(this.type);
-	      if (this.$el.id) newNode.id = this.$el.id;
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
 	      if (this.type !== 'a') {
 	        newNode.className = this.class ? this.class : this.css ? this.css + ' label' : "label";
 	      } else newNode.className = this.$el.className;
@@ -800,7 +795,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 12 */
+/* 11 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -828,7 +823,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 13 */
+/* 12 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -856,7 +851,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 14 */
+/* 13 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -884,7 +879,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -912,7 +907,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -920,7 +915,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = {
+	var Segment = exports.Segment = {
 	  template: '<div :class="className"><slot></slot></div>',
 	  props: {
 	    class: {
@@ -939,8 +934,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 
+	var Segments = exports.Segments = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' segments' : "ui segments";
+	    }
+	  }
+	};
+
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -987,7 +1001,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 18 */
+/* 17 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1038,8 +1052,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.type) {
 	      var newNode = document.createElement(this.type);
-	      if (this.$el.id) newNode.id = this.$el.id;
-	      newNode.className = this.$el.className;
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
 	      newNode.innerHTML = this.$el.innerHTML;
 	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
@@ -1047,7 +1062,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1113,7 +1128,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1179,7 +1194,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 21 */
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1207,7 +1222,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 22 */
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1235,7 +1250,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 23 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1262,15 +1277,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  ready: function ready() {
 	    var newNode = document.createElement('table');
-	    if (this.$el.id) newNode.id = this.$el.id;
-	    newNode.className = this.$el.className;
+	    for (var i = 0; i < this.$el.attributes.length; i++) {
+	      newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	    }
 	    newNode.innerHTML = this.$el.innerHTML;
 	    this.$el.parentNode.replaceChild(newNode, this.$el);
 	  }
 	};
 
 /***/ },
-/* 24 */
+/* 23 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1298,7 +1314,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 25 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1345,7 +1361,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 26 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1472,7 +1488,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 27 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1557,7 +1573,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 28 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1608,8 +1624,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.type) {
 	      var newNode = document.createElement(this.type);
-	      if (this.$el.id) newNode.id = this.$el.id;
-	      newNode.className = this.$el.className;
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
 	      newNode.innerHTML = this.$el.innerHTML;
 	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
@@ -1617,7 +1634,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 29 */
+/* 28 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1673,17 +1690,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	    css: {
 	      type: String,
 	      default: ''
+	    },
+	    format: {
+	      default: true
 	    }
 	  },
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? this.css + ' value' : "value";
 	    }
+	  },
+	  ready: function ready() {
+	    if (this.format) {
+	      this.$el.innerHTML = this.$el.innerHTML.replace(/(^|\s)\d+(?=\.?\d*($|\s))/g, function (m) {
+	        return m.replace(/(?=(?!\b)(\d{3})+$)/g, ',');
+	      });
+	    }
 	  }
 	};
 
 /***/ },
-/* 30 */
+/* 29 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1714,7 +1741,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1742,7 +1769,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1778,7 +1805,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 33 */
+/* 32 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1813,8 +1840,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.type) {
 	      var newNode = document.createElement(this.type);
-	      if (this.$el.id) newNode.id = this.$el.id;
-	      newNode.className = this.$el.className;
+	      for (var i = 0; i < this.$el.attributes.length; i++) {
+	        newNode.setAttribute(this.$el.attributes[i].name, this.$el.attributes[i].value);
+	      }
 	      newNode.innerHTML = this.$el.innerHTML;
 	      this.$el.parentNode.replaceChild(newNode, this.$el);
 	    }
@@ -1823,7 +1851,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 34 */
+/* 33 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1856,7 +1884,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1887,7 +1915,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1915,7 +1943,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1972,7 +2000,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1991,8 +2019,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      type: String,
 	      default: ''
 	    },
-	    value: 0,
-	    max: 5
+	    value: {
+	      default: 0
+	    },
+	    max: {
+	      default: 5
+	    }
 	  },
 	  computed: {
 	    className: function className() {
@@ -2005,7 +2037,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2052,7 +2084,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2075,6 +2107,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' shape' : "ui shape";
+	    }
+	  },
+	  ready: function ready() {
+	    $(this.$el).shape();
+	  }
+	};
+
+	var Sides = exports.Sides = {
+	  template: '<div :class="className"><slot></slot></div>',
+	  props: {
+	    class: {
+	      type: String,
+	      default: ''
+	    },
+	    css: {
+	      type: String,
+	      default: ''
+	    }
+	  },
+	  computed: {
+	    className: function className() {
+	      return this.class ? this.class : this.css ? this.css + ' sides' : "sides";
 	    }
 	  }
 	};
@@ -2099,7 +2153,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 41 */
+/* 40 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2122,6 +2176,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? 'ui ' + this.css + ' sidebar' : "ui sidebar";
+	    }
+	  },
+	  methods: {
+	    show: function show() {
+	      $(this.$el).sidebar('show');
+	    },
+	    hide: function hide() {
+	      $(this.$el).sidebar('hide');
+	    },
+	    toggle: function toggle() {
+	      $(this.$el).sidebar('toggle');
 	    }
 	  }
 	};
@@ -2146,7 +2211,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 42 */
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';

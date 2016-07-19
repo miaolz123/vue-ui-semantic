@@ -47,10 +47,18 @@ export const Value = {
       type: String,
       default: '',
     },
+    format: {
+      default: true,
+    },
   },
   computed: {
     className: function () {
       return this.class ? this.class : this.css ? `${this.css} value` : "value"
     },
+  },
+  ready() {
+    if (this.format) {
+      this.$el.innerHTML = this.$el.innerHTML.replace(/(^|\s)\d+(?=\.?\d*($|\s))/g, (m) => m.replace(/(?=(?!\b)(\d{3})+$)/g, ','))
+    }
   },
 }

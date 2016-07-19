@@ -9,8 +9,12 @@ export default {
       type: String,
       default: '',
     },
-    value: 0,
-    max: 5,
+    value: {
+      default: 0,
+    },
+    max: {
+      default: 5,
+    },
   },
   computed: {
     className: function () {

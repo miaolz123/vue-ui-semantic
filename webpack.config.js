@@ -8,7 +8,7 @@ var banner =
   " */\n";
 
 module.exports = {
-  entry: './src/build.js',
+  entry: './src/VueUiSemantic.js',
   output: {
     path: './dist',
     filename: 'vue-ui-semantic.js',

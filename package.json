@@ -1,6 +1,6 @@
 {
   "name": "vue-ui-semantic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "semantic-ui for vue",
   "main": "dist/vue-ui-semantic.common.js",
   "files": [

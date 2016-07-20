@@ -65,7 +65,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.install = install;
+	exports.install = undefined;
 
 	var _util = __webpack_require__(1);
 
@@ -288,7 +288,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// util
 
 
-	function install(Vue) {
+	Ui.install = function (Vue) {
 	  // util
 	  Vue.component('ui-content', Ui.Content);
 	  Vue.component('ui-description', Ui.Description);
@@ -365,9 +365,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Vue.component('ui-sidebar', Ui.Sidebar);
 	  Vue.component('ui-pusher', Ui.Pusher);
 	  Vue.component('ui-sticky', Ui.Sticky);
-	}
+	};
 
 	exports.default = Ui;
+	var install = exports.install = Ui.install;
 
 /***/ },
 /* 1 */
@@ -1698,13 +1699,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  computed: {
 	    className: function className() {
 	      return this.class ? this.class : this.css ? this.css + ' value' : "value";
-	    }
-	  },
-	  ready: function ready() {
-	    if (this.format) {
-	      this.$el.innerHTML = this.$el.innerHTML.replace(/(^|\s)\d+(?=\.?\d*($|\s))/g, function (m) {
-	        return m.replace(/(?=(?!\b)(\d{3})+$)/g, ',');
-	      });
 	    }
 	  }
 	};

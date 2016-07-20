@@ -124,7 +124,7 @@ const Ui = {
   Sticky,
 }
 
-export function install(Vue) {
+Ui.install = function (Vue) {
   // util
   Vue.component('ui-content', Ui.Content)
   Vue.component('ui-description', Ui.Description)
@@ -204,3 +204,5 @@ export function install(Vue) {
 }
 
 export default Ui
+export const install = Ui.install
+

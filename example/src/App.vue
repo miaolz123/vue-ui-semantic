@@ -19,9 +19,7 @@
     <br>
     <br>
     <ui-container>
-      <P>CESHIDE</P>
-      <router-view>
-      </router-view>
+      <router-view></router-view>
     </ui-container>
   </ui-pusher>
 </template>

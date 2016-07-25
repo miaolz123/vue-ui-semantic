@@ -23,5 +23,5 @@ export default {
   },
   ready() {
     $(this.$el).rating()
-  }
+  },
 }
